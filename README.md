@@ -13,4 +13,13 @@ Como delcarar uma variável booleana e definir seu valor como verdadeiro(true) o
 
 Onde as booleanas mais aparecem, como resultados de conparações com === ou outros operadores de comparação >=
 
+Estudo sobre as váriaveis(var, let e const)
+
+Alguns valores false de comparações -> null, undefined, 0, NaN e String vazias
+
+Null -> valor para variável que não queremos como undefined
+
+Null -> objeto no js, diferente de Undefined
+
+Number() e String() podem ser usados para força uma mudança de tipos
 
