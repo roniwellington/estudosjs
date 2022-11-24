@@ -7,7 +7,7 @@ Na pasta js fundamentos foi estudado armazenamento valores em alguns tipos de va
 
 Declaração de variáveis numéricas, com tipo number, podendo ser um inteiro ou valor flutuante.
 
-Declaração de string, como frases, números e pontiação.
+Declaração de string, como frases, números e pontuação ou uma mistura de todos esses.
 
 Como delcarar uma variável booleana e definir seu valor como verdadeiro(true) ou falso(false).
 
