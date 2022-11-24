@@ -23,3 +23,37 @@ Null -> objeto no js, diferente de Undefined
 
 Number() e String() podem ser usados para força uma mudança de tipos
 
+As características principais do JavaScript(linguagem interpretada e dinamicamnte tipada
+
+NodeJS é um interpretador de JavaScript para backend(lado servido)
+
+Como ler os erros que aparecem no console da aplicação
+
+O que é stracktrace, também chamado de pilha, auxilia na localização de erros e outros
+
+Console API 
+
+Diferenças entre comparações (==)(===), conversão entre as variáveis antes da comparação
+
+Operadores ternários
+
+O porque do nome do "operador ternário"(uma linha 3 operadores juntos)
+
+Template literal(construção de strings
+
+Uso do template literal
+
+Uso de funções e suas vantagens
+
+Utilizando o return e a utilidades de argumentos
+
+Hoisting
+
+Expressões de função
+
+Arrow function
+
+
+
+
+
