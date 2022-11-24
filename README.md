@@ -11,7 +11,7 @@ Declaração de string, como frases, números e pontuação ou uma mistura de to
 
 Como delcarar uma variável booleana e definir seu valor como verdadeiro(true) ou falso(false).
 
-Onde as booleanas mais aparecem, como resultados de conparações com === ou outros operadores de comparação >=
+Onde as booleanas mais aparecem, como resultados de comparações com === ou outros operadores de comparação >=
 
 Estudo sobre as váriaveis(var, let e const)
 
