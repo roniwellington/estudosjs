@@ -4,21 +4,23 @@
 
 //DECLARAÇÃO DE FUNÇÃO
 
-// 1) declara a função
-////////////////////string
-function imprimeTexto (texto){
-    console.log(texto)
+//1º) declara a função
+                    //string
+function imprimeTexto(texto, texto2){
+    console.log(texto + texto2)
 }
 
-//2) executa a função (1 ou + vezes)
 
-imprimeTexto("Roni disse: Ia tá de boa, eu to de boa");
-imprimeTexto("Wellington: não to de boa meu chegaod")
+//2) executa a função(1 ou  + vezes)
 
-// três formas de escrever funções
+imprimeTexto("Resultado da soma é ",soma(2,2));
 
-function soma(){
-    const resultado = 2 + 2;
+//três formas de escrever funções
+
+function soma(num1, num2){
+    return num1 + num2;
+    
 }
 
-soma()
+// console.log(soma(2,2))
+
