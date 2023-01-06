@@ -1,0 +1,6 @@
+Livro
+Lógica de programação
+Crie seus primeiros programas usando JavaScript e HTML
+Autor : Paulo Silveira e Adriano Almeida
+
+Editora Casa do Código
