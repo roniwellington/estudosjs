@@ -3,8 +3,9 @@
 let numeros = new Array(1, 2, 3, 5, 2);
 
 //mostrar na tela  a soma dos números pares array acima
-
-somaOsPares(numeros)
+ 
+let somaDosPares =  somaOsPares(numeros)
+alert('A soma é ' + somaDosPares)
 
 function somaOsPares(arr) {
 
@@ -17,5 +18,5 @@ function somaOsPares(arr) {
             soma += arr[i];
         }
     }
-    alert('A soma dos numeros pares é ' + soma);
+    return soma;
 }
