@@ -21,3 +21,9 @@ function somamedia(){
     console.log('Soma: ' + soma)
     console.log('A media é ' + media)
 }
+
+function calculo(){
+    var temp = document.querySelector('#temperatura').value;
+    var result = (temp * 1.8) + 32;
+    alert('Fahrenheit: ' + result);
+}
