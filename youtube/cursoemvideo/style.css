@@ -3,3 +3,16 @@ body {
     color: white;
     font: normal 20pt Arial;
 }
+
+#area {
+    background: green;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+input{
+    font: normal 18pt Arial;
+    width: 100px;
+}
