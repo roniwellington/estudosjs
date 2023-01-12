@@ -4,7 +4,7 @@ body {
     font: normal 15pt Arial;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    
 }
 
 #area {
@@ -15,10 +15,10 @@ body {
     text-align: center;
 }
 
-input {
+/* input {
     font: normal 18pt Arial;
     width: 100px;
-}
+} */
 
 header {
     text-align: center;
@@ -48,7 +48,29 @@ div {
 
 
 
+.botao{
+    background-color: steelblue;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
+    transition: .5s;
+}
+
+.botao:hover{
+    background: rgb(0, 145, 130);
+}
+
+
+
 footer {
+    background: rgba(0, 0, 0, 0.384);
     text-align: center;
     font-style: italic;
+    margin-top: 35px;
+    padding: 20px;
+    border-radius: 10px;
 }
