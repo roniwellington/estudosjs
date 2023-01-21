@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body{
+            background: rgb(107, 107, 241);
+        }
+
+        .botao{
+            margin-top: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Analizador de Números</h1>
+    </header>
+
+    <section>
+        <div>
+            Número ( entre 1 e 100):
+            <input type="number" name="fnum" id="fnum">
+            <input type="button" value="Adicionar" class="botao" onclick="adicionar()">
+            <br><br><select name="flista" id="flista" size="6"></select>
+            <br><input type="button" value="Finalizar" class="botao" onclick="finalizar()"><br><br>
+        </div>
+
+        <div id="res">Olá</div>
+    </section>
+
+    <script src="ex13.js"></script>
+</body>
+</html>
