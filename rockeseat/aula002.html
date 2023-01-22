@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="aula002.css">
+</head>
+<body>
+    <header>
+        <div>logo</div>
+        <div>
+            <a href="">Menu</a>
+            <a href="">Sobre</a>
+            <a href="">Contato</a>
+
+        </div>
+    </header>
+
+    <main>
+        Conteúdo
+
+        <h2>A lua</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, vitae natus atque aut perspiciatis odit pariatur fuga blanditiis eos explicabo sint laudantium inventore nulla quas quam expedita, ullam aperiam necessitatibus.</p>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, atque qui amet vero consectetur, aspernatur alias odio numquam sed reiciendis minima distinctio ipsa, ea quidem. Illum facilis et nisi cum?</p>
+
+        <fieldset>
+            <legend>Bora tomar um café?</legend>
+
+            <label for="yep">Sim</label>
+            <input type="radio" id="yep" name="coffee" value="yes">
+
+            <label for="nono">Não</label>
+            <input checked type="radio" id="nono" name="coffee" value="no">
+            <br><br>
+            <label for="carselect">Nossos Cafés</label>
+            <select name="carmodel" id="carselect">
+                <option value="">Selecione o Café</option>
+                <option value="">Selecione o Café</option>
+                <option value="">Selecione o Café</option>
+            </select><br><br>
+            <label for="">Agendar</label>
+            <input type="datetime-local">
+
+        </fieldset><br><br>
+
+            <form action="">
+                <fieldset form="contato" name="inputs-contact">
+                    <legend>Contato</legend>
+                    <label for="">Email</label>
+                    <input type="email" autocomplete="email" placeholder="Seu Email" required>
+                    <br><br>
+                    <label for="">Senha</label>
+                    <input type="password" name="" id="" size="10"   title="Coloque HEX no mínimo 4 caracteres e no máximo 8 caracteres" placeholder="Digite sua senha" required inputmode="numeric" autocomplete="new-password">
+                </fieldset><br>
+                <button type="submit">Enviar</button>
+            </form>
+
+            <h3>Contato final</h3>
+
+            <form action="">
+                <fieldset>
+                    <legend>Contato</legend>
+
+                    <label for="name">Nome</label><br>
+                    <input id="name" type="text" name="name" placeholder="Nome Completo">
+                    <br><br>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="exemplo@gmail.com">
+                    <br><br>
+                    <label for="message">Messagem</label><br>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Digite sua Mensagem"></textarea>
+                    <br><br>
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+            
+        
+    </main>
+
+    <aside>Infos adicionais <br><br>
+        <form action="">
+            <input type="search" name="q" list="searchterms" placeholder="Digite sua pesquisa" aria-label="Campo de pesquisa">
+            <button>Pesquisar</button>
+        </form><br>
+        <img src="https://source.unsplash.com/random" alt="">
+        <label for="">
+            Nome:
+            <input type="text">
+        </label><br><br>
+
+        <input type="text" list="fruitsdata" placeholder="Escolha uma fruta">
+        <datalist id="fruitsdata">
+            <option>#ff0000</option>
+            <option>#00ff00</option>
+            <option>orange</option>
+            <option>mango</option>
+            <option>apple</option>
+        </datalist><br><br>
+        <input type="color" list="fruitsdata"><br>
+        <input type="range" min="1" max="100">
+        <br><br>
+        <form action="" method="post" enctype="multipart/form-data">
+            <input type="file" accept="image/*">
+            <br><br>
+            <button type="submit">Enviar</button>
+        </form><br>
+
+        <fieldset>
+            <legend>Choose your interests</legend>
+            <div>
+                <input type="checkbox" name="interests" id="coding" value="coding" checked>
+                <label for="coding">Coding</label>
+            </div>
+            <div>
+                <input type="checkbox" name="interest" id="music" value="music">
+                <label for="music">Music</label>
+            </div>
+        </fieldset>
+        <label for="subscribe">Receber notificações</label>
+        <input type="checkbox" name="subscribe" id="subscribe" checked>
+        
+    </aside>
+
+    <footer>rodape
+    </footer>
+</body>
+</html>
