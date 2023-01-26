@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+</head>
+<body>
+    <script>
+        var ano = 2016;
+        // document.write('Flavio tem ' + (ano - 1977) + ' anos <br>');
+        // document.write('Flavio tem ' + (ano - 1996) + ' anos <br>');
+
+        // ano = 2017;
+        // document.write('Barney tem ' + (ano - 1976) + 'anos <br>')
+
+        var idadeFlavio = (ano - 1977)
+        var idadeJoaquim = (ano - 1996)
+        ano = 2020
+        var idadeBarney = (ano - 1976)
+
+        document.write('Flavio tem ' + idadeFlavio + ' anos <br>');
+        document.write('Joaquim tem ' + idadeJoaquim + ' anos <br>');
+        
+        document.write('Barney tem ' + idadeBarney + ' anos <br>');
+
+        var media = (idadeFlavio + idadeJoaquim + idadeBarney)/3
+        document.write('A media das idades é ' + Math.round(media))
+
+    </script>
+</body>
+</html>

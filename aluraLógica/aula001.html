@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula de lógica de programação</title>
+</head>
+<body>
+    <script>
+
+        function pulaLinha(){
+            document.write('<br>')
+        }
+
+        function mostra(frase){
+            document.write(frase)
+        }
+        
+        var ano = 2017
+        var idadeFlavio = (ano - 1977)
+        var idadeJoaquim = (ano - 1996)
+        ano = 2020
+        var idadeBarney = (ano - 1976)
+        document.write('Flavio tem ' + idadeFlavio + ' anos');
+        pulaLinha()
+        document.write('Joaquim tem ' + idadeJoaquim + ' anos');
+        pulaLinha()
+        
+        document.write('Barney tem ' + idadeBarney + ' anos');
+        pulaLinha()
+        var media = (idadeFlavio + idadeJoaquim + idadeBarney)/3
+        document.write('A media das idades é ' + Math.round(media))
+    </script>
+</body>
+</html>
