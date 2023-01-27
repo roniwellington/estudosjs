@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 008</title>
+</head>
+
+<body>
+    <script>
+        function pulaLinha() {
+            document.write("<br><br>")
+        }
+
+        function mostra(frase) {
+            document.write(frase)
+            pulaLinha()
+        }
+
+        function calculaImc(altura, peso){
+            return peso / (altura * altura)
+        }
+
+        var nome = prompt("Informe o seu nome");
+        var alturaInformada = prompt(nome + ", Informe sua altura");
+        var pesoInformado = prompt = prompt(nome + ", informe seu peso");
+
+        var imc = Math.round(calculaImc(alturaInformada, pesoInformado));
+
+        mostra(nome + ", o seu IMC é " + imc)
+
+        if(imc < 18.5){
+            mostra("Você está muito abaixo do recomendado")
+        } else if (imc > 35){
+            mostra("Você esta acima do recomendato")
+        } else {
+            mostra("Seu IMC está dentro dos padroes")
+        }
+
+        
+
+
+    </script>
+</body>
+
+</html>

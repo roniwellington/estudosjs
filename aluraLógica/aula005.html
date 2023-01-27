@@ -18,16 +18,18 @@
         }
 
         function calculaImc(altura, peso){
-            var imc = peso / (altura * altura);
 
-            return imc
+            return peso / (altura * altura);
         }
 
-        var imcFlavio = calculaImc(1.71, 73)
-        var imcAmigo = calculaImc(1.72, 68)
+        // var imcFlavio = calculaImc(1.71, 73)
+        // var imcAmigo = calculaImc(1.72, 68)
+        // var totalImc = imcFlavio + imcAmigo
 
-        mostra("O imc de Flavio é " + imcFlavio)
-        mostra("O imc de Flavio é " + imcAmigo)
+        mostra("O imc de Flavio é " + calculaImc(1.63, 48))
+        mostra("O imc de Andre é " + calculaImc(1.73, 58))
+        // mostra("O imc de Flavio é " + imcAmigo)
+        // document.write("A soma dos imc's é " + totalImc)
 
     </script>
 </body>
