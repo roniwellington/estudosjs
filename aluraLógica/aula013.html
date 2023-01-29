@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+<body>
+    <script>
+
+        function pulaLinha() {
+            document.write("<br><br>")
+        }
+
+        function mostra(frase) {
+            document.write(frase)
+            pulaLinha()
+        }
+
+        var numeroPensado = Math.round(Math.random() * 10);
+
+        var tentativas = 1;
+
+        while(tentativas <= 3){
+            var chute = parseInt(prompt("Digite seu chute!"))
+
+            if(chute == numeroPensado){
+
+                mostra("Você acertou!")
+                break;
+
+            } else {
+                mostra("Você errou")
+            }
+
+            tentativas++
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio</title>
+</head>
+
+<body>
+    <script>
+        function pulaLinha() {
+            document.write("<br><br>")
+        }
+
+        function mostra(frase) {
+            document.write(frase)
+            pulaLinha()
+        }
+
+        var quantidadeCarbono1 = parseInt(prompt("Quantidade de carbono substância 1"))
+        var quantidadeCarbono2 = parseInt(prompt("Quantidade de carbono substância 2"))
+
+        quantidadeCarbono2 = quantidadeCarbono2 + 2;
+
+        if(quantidadeCarbono1 == quantidadeCarbono2){
+            mostra("Acho que são substancias parecidas")
+        } else {
+            mostra("São substancias bem diferentes")
+        }
+
+    </script>
+</body>
+
+</html>

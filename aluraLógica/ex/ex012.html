@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+<body>
+    <script>
+
+        function pulaLinha() {
+            document.write("<br><br>")
+        }
+
+        function mostra(frase) {
+            document.write(frase)
+            pulaLinha()
+        }
+
+        var loginCadastrado = "alura";
+        var senhaCadastrada = "alura321";
+
+        var maximoTentativas = 3;
+        var tentativaAtual = 1;
+
+        while(tentativaAtual <= maximoTentativas){
+            var loginInformado = prompt("Informe seu login");
+            var senhaInformada = prompt("Informe sua senha");
+
+            if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada){
+                alert("Bem-vindo ao sistema, " + loginInformado)
+                tentativaAtual = maximoTentativas;//acertou, então fazemos o gasto do loop para sair dele
+            } else {
+                if(tentativaAtual == 3){
+                    alert("Número permitido de tentativas ultrapassado!")
+                } else {
+                    alert(" Login inválido. Tente novamente")
+                }
+            }
+
+            //vai para próxima tentativa
+            tentativaAtual = tentativaAtual +1
+        }
+       
+
+    </script>
+</body>
+</html>
