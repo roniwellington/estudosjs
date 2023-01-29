@@ -1,34 +1,7 @@
-// var idadeLinda = 12;
-// var idadeGuaraciara = 15;
-// var idadePerola = 13;
-// var media = (idadeLinda + idadeGuaraciara + idadePerola) / 3;
-// console.log(`A idade de Linda é ${idadeLinda}, da Guaraciara é ${idadeGuaraciara} e da Perola é ${idadePerola}`)
-// console.log(`A media da idade das delas é ${Math.round(media)}`)
+var parcelas = [10.40, 40.00, 100.18, 200];
 
-
-
-// function exibeAlerta(mensagem){
-//     console.log("***" + mensagem + "***");
-// }
-
-// var idade1 = 10;
-// var idade2 = 20;
-// var idade3 = 30;
-
-// var totalIdades = idade1 + idade2 + idade3;
-// var mediaIdade = totalIdades/3
-
-// exibeAlerta("Total de idades é " + totalIdades)
-// exibeAlerta("Á media das idades é " + mediaIdade)
-
-
-function pulaLinha(){
-    console.log('**********************************')
+for(var i = 0; i < parcelas.length; i++){
+    console.log(parcelas[i]);
 }
 
-pulaLinha()
-console.log('BEM-VINDO AO MEU PROGRAMA')
-pulaLinha()
-console.log('ELE REALMENTE FUNCIONA')
-pulaLinha()
-console.log('EU SEI FUNÇÃO PARA FAZER ISSO')
+console.log('FIM')
