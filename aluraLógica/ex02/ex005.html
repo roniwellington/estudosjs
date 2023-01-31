@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+
+<body>
+    <canvas width="700" height="500"></canvas>
+
+    <script>
+
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+        pincel.fillStyle = 'lightgray';
+        pincel.fillRect(0, 0, 600, 400);
+
+        function desenhaQuadrado(x, y, tamanho, cor) {
+            var tela = document.querySelector('canvas');
+            var pincel = tela.getContext('2d');
+
+            pincel.fillStyle = cor;
+            pincel.fillRect(x, y, tamanho, tamanho);
+            pincel.strokeStyle = 'black';
+            pincel.strokeRect(x, y, tamanho, tamanho);
+        }
+
+        function desenhaTexto(texto, x, y) {
+            var tela = document.querySelector('canvas');
+            var pincel = tela.getContext('2d');
+
+            pincel.font = '20px Georgia';
+            pincel.fillStyle = 'black';
+            pincel.fillText(texto, x, y);
+        }
+
+
+        desenhaTexto("Qual é a fração?", 50, 30);
+        var y = 50;
+        desenhaQuadrado(50, y, 100, 'green');
+        desenhaQuadrado(150, y, 100, 'green');
+        desenhaQuadrado(250, y, 100, 'green');
+        desenhaQuadrado(350, y, 100, 'white');
+
+
+    </script>
+</body>
+
+</html>

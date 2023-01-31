@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+
+    <script>
+
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+        pincel.fillStyle = 'lightgray';
+        pincel.fillRect(0, 0, 600, 400);
+
+
+
+
+
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+
+        function desenhaEsquadro(xa, ya, xc, yc, cor) {
+            //a implementacao fica com você :)
+            pincel.fillStyle = cor
+            pincel.beginPath();
+            pincel.moveTo(xa, ya);
+            pincel.lineTo(xa, yc);
+            pincel.lineTo(xc, yc);
+            pincel.fill();
+            pincel.fillStyle = 'white'
+            pincel.beginPath();
+            pincel.moveTo((6 * xa + xc) / 7, (9 * ya + 5 * yc) / 14);
+            pincel.lineTo((6 * xa + xc) / 7, (ya + 6 * yc) / 7);
+            pincel.lineTo((5 * xa + 9 * xc) / 14, (ya + 6 * yc) / 7);
+            pincel.fill();
+        }
+
+        desenhaEsquadro(50, 50, 400, 400, 'red');
+
+    </script>
+</body>
+
+</html>

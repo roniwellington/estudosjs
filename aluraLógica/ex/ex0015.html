@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+
+<body>
+
+    <h1>Receitas do Yan</h1>
+
+    <script>
+
+        function pulaLinha(){
+            document.write("<br>")
+        }
+
+        function mostra(frase) {
+            document.write(frase)
+            pulaLinha()
+        }
+
+        var ingredientes = [];
+
+        var quantidade = parseInt(prompt("Quantos ingredientes você vai adicionar?"));
+
+        var contador = 1;
+
+        while (contador <= quantidade) {
+
+            var ingrediente = prompt("Informe o ingrediente " + contador);
+
+            var existe = false;
+
+            for (var posicao = 0; posicao < ingredientes.length; posicao++) {
+                if (ingredientes[posicao] == ingrediente) {
+
+                    existe = true;
+                    break
+                }
+            }
+
+            if (existe == false) {
+                ingredientes.push(ingrediente);
+                contador++
+            }
+        }
+
+        mostra(ingredientes)
+
+    </script>
+</body>
+
+</html>
