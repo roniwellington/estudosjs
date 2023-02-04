@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula02</title>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+    <script>
+
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+        pincel.fillStyle = 'green';
+        pincel.fillRect(0, 0, 600, 400);
+
+        
+
+        
+        function desenhaCirculo(x, y, raio) {
+            pincel.fillStyle = 'blue';
+            pincel.beginPath();
+            pincel.arc(x, y, raio, 0, 2 * Math.PI);
+            pincel.fill();
+        }
+
+        function limpaTela() {
+            pincel.clearRect(0, 0, 600, 400);
+        }
+
+        function atualizaTela() {
+            limpaTela();
+            desenhaCirculo(x, y, 10);
+        }
+
+        setInterval(atualizaTela, 20);
+
+        function leDoTeclado(evento){
+
+            if(evento.keyCode == cima){
+                
+                y = y - taxa;
+
+            } else if(evento.keyCode == baixo) {
+
+                y = y + taxa;
+
+            } else if (evento.keyCode == esquerda){
+
+                x  = x - taxa;
+
+            } else if (evento.keyCode == direita){
+
+                x = x + taxa;
+
+            }
+
+        }
+
+        document.onkeydown = leDoTeclado;
+
+
+
+    </script>
+</body>
+
+</html>
