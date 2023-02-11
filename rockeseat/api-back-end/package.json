@@ -1,0 +1,13 @@
+{
+  "name": "api-back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Roni Wellington",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
